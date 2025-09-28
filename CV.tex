@@ -1,0 +1,223 @@
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+\moderncvcolor{cerulean}                           % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'; for contemporary style use 'cerulean'
+% moderncv themes
+\moderncvstyle[left, details, noqr]{contemporary}                     % style options are 'casual' (default), 'classic', 'banking', 'oldstyle', 'fancy' and 'contemporary'
+                                                   % the 'contemporary' style optionally takes the `qr` (default) or `noqr` options
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% adjust page margins
+\usepackage[hmargin=0.5in,vmargin=10pt]{geometry}                  % the 'contemporary' style looks better with reduced margins; uncomment the line below for increased margin
+%\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+%\setlength{\listitemsymbolspace}{10pt}            % set custom spacing between list symbol and text item (influences \cvlistitem and \cvlistdoubleitem)
+
+% the 'contemporary' style allows to append additional elements to the head background; uncomment and customize if needed
+%\def\@moderncvheadBackground{
+%}
+
+\usepackage{hyperref}
+% font loading
+% for luatex and xetex, do not use inputenc and fontenc
+% see https://tex.stackexchange.com/a/496643
+\ifxetexorluatex
+  \usepackage{fontspec}
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{Latin Modern Roman}
+  \setsansfont{Latin Modern Sans}
+  \setmonofont{Latin Modern Mono}
+  \setmathfont{Latin Modern Math}
+
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\fi
+
+% set default (can also change dynamically if needed)
+\setlength{\hintscolumnwidth}{2.5cm}
+
+% document language
+\usepackage[english]{babel}  
+
+% personal data
+\name{James}{WILSON}
+\title{Curriculum vitae --  September 2025}                               % optional, remove / comment the line if not wanted
+\born{13 November 1984}                                 % optional, remove / comment the line if not wanted
+\address{104 Church Road}{Oxford OX4 4YB}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+44~(0)~7817~806984}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{jpwilson123@outlook.com}                               % optional, remove / comment the line if not wanted
+\extrainfo{
+  \textbf{GMC}: 7420556\\
+  \textbf{NTN}: NWE/CIT/7420556/D}
+
+\photo[64pt][2pt]{picture2.png}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 2pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustments (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+% \renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+%   to redefine the bibliography heading string ("Publications")
+% \renewcommand{\refname}{Publications}
+
+% bibliography with multiple entries
+% \usepackage{multibib}
+% \newcites{jrnlA,jrnlB}{{First author},{Co-author}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\makecvtitle
+
+\section{Education and qualifications}  % for 'contemporary' style use optional argument for displaying an icon, e.g. \section[\faGraduationCap]{Education}
+\cventry{2022 -- current}{Doctorate of Philosphy in Clinical Medicine (DPhil)}{}{}{}{University of Oxford}  % arguments 3 to 6 can be left empty
+\cventry{May 2022}{Combined Infection Certificate Examination (CICE)}{}{}{}{Royal College of Pathologists}  % arguments 3 to 6 can be left empty
+\cventry{Dec 2017}{Professional Diploma in Tropical Medicine and Hygiene (DTM\&H)}{}{}{}{London School of Hygiene \& Tropical Medicine}
+\cventry{June 2016}{Membership of the Royal College of Physicians (MRCP)}{}{}{}{Royal College of Physicians, Part 1: Sept 2014; Part 2: May 2015; PACES: June 2016}
+\cventry{2009 -- 2013}{Bachelor of Medicine and Surgery (MBChB)}{}{}{}{University of Warwick, 4-year graduate entry course}
+\cventry{2008 -- 2009}{Masters in Medical Statistics (MSc)}{}{}{}{London School of Hygiene \& Tropical Medicine (full scholarship)}
+\cventry{2003 -- 2007}{Masters in Physics (MPhys)}{}{}{}{University of Oxford, 1\textsuperscript{st} Class}
+
+\section{Doctoral thesis}
+\cvitem{Title}{\emph{Harnessing Individual Participant Data from Clinical Trials to Predict Visceral Leishmaniasis Relapse}}
+\cvitem{Supervisors}{Prof Philippe Guérin ||  Prof Ahmed Musa ||  Dr Prabin Dahal}
+\cvitem{Description}{Planned submission - January 2026 || 3-page summary: \url{https://tinyurl.com/6jp9v2v4}}
+
+\section{Employment and experience}
+\subsection{Training programme}
+\cventry{2019 -- 2022}{Core Infection Training -- Infectious Diseases and Internal Medicine}{}{}{}{
+  North West Region (Manchester)\vspace{3.5pt}\newline{}
+  \setlength{\hintscolumnwidth}{3.2cm}{
+    \cvitem{Aug `19 -- Feb `20}{Infectious Diseases, North Manchester General Hospital}
+    \cvitem{Feb `20 -- Feb `21}{Internal Medicine (various rotations), Blackpool Victoria Hospital}
+    \cvitem{Feb `21 -- Aug `21}{Infectious Diseases, North Manchester General Hospital}
+    \cvitem{Aug `21 -- Aug `22}{Microbiology, Salford General Hospital}
+    \cvitem{Aug `22 -- Oct `22}{Infectious Diseases, North Manchester General Hospital}
+    % \cvitem{Oct `22 -- current}{Out of programme research (OOPR)}
+  }
+}
+\cventry{2015 -- 2017}{Core Medical Training}{}{}{}{
+  London North West Foundation School\vspace{3.5pt}\newline{}
+  \setlength{\hintscolumnwidth}{3.2cm}{
+    \cvitem{Aug `15 -- Dec `15}{Oncology, Charing Cross Hospital}
+    \cvitem{Dec `15 -- Apr `16}{Acute medicine, Northwick Park Hospital}
+    \cvitem{Apr `16 -- Aug `16}{Cardiology, Hammersmith Hospital}
+    \cvitem{Aug `16 -- Dec `16}{Infectious Diseases, Hammersmith Hospital}
+    \cvitem{Dec `16 -- Apr `17}{Gastroenterology, Barnet General Hospital}
+    \cvitem{Apr `17 -- Aug `17}{Respiratory Medicine, Northwick Park Hospital}
+  }
+}
+\cventry{2013 -- 2015}{Academic Foundation Programme}{}{}{}{
+  North Central Thames Foundation School\vspace{3.5pt}\newline{}
+  \setlength{\hintscolumnwidth}{3.2cm}{
+    \cvitem{Aug `13 -- Dec `13}{Respiratory Medicine, Barnet General Hospital}
+    \cvitem{Dec `13 -- Apr `14}{Care of the Elderly, Barnet General Hospital}
+    \cvitem{Apr `14 -- Aug `14}{General Surgery, Barnet General Hospital}
+    \cvitem{Aug `14 -- Dec `14}{Care of the Elderly, University College Hospital}
+    \cvitem{Dec `14 -- Apr `15}{Accident and Emergency, University College Hospital}
+    \cvitem{Apr `15 -- Aug `16}{Academic hepatology, Royal Free Hospital}
+  }
+}
+
+\subsection{Selected Additional employment and experience}
+\cventry{2020 -- 2022}{Regional Trainee Representative}{North West Region - Manchester}{}{}{
+  \begin{itemize}
+    \item Represented trainees' interests at regular meetings with Health Education England-North West
+    \item Liaised with regional training programme directors to address and resolve training issues.
+    \item Assisted in organising and delivering regional infection teaching days.
+  \end{itemize}
+}
+
+\cventry{Sept `18 -- July `19}{Research Fellow}{Innovation for Health and Development}{}{}{
+  \begin{itemize}
+    \item Awarded competitive research fellowship with Imperial College-linked group at Cayetano University, Lima, Perú.
+    \item Supervised by Prof Carlton Evans; funded by Imperial College Charity and indirectly through World Bank, and Wellcome Trust.
+    \item Led local research team investigating technology-appropriate drug susceptibility testing techniques.
+    \item Supported a randomised controlled trial on socioeconomic incentives to improve TB treatment adherence and outcomes (\url{https://ifhad.org}).
+  \end{itemize}
+}
+
+\cventry{Jan -- June 2018}{Junior Research Fellow (part-time, funded)}{TB Centre, London School of Hygiene \& Tropical Medicine}{}{}{
+  \begin{itemize}
+    \item Co-led systematic review and meta-analysis commissioned by WHO to update guidelines on TB infection control
+  \end{itemize}
+}
+\cventry{Jan -- Aug 2018}{Senior Clinical Fellow in Respiratory Medicine and Infectious Diseases}{Northwick Park Hospital}{}{}{
+  \begin{itemize}
+    \item Working at ST3 level in a busy district general hospital
+  \end{itemize}
+}
+
+\section{Awards and prizes}
+
+\cvitem{2022}{\textbf{DPhil Funding} Full fees with stipend awarded from the University of Oxford (Clarendon Scholarship, Clinician-Investigator Award) and Infectious Diseases Data Observatory (Wellcome Grant).}
+\cvitem{2020}{\textbf{Quality Improvement Prize} 1\textsuperscript{st} prize in an annual competition open to all staff members of Blackpool Teaching Hospitals NHS Foundation Trust. Awarded for the development and presentation of guidelines developed as part of the rapid COVID-19 response}
+\cvitem{2018}{\textbf{Imperial College Charity Award} Grant awarded by the Imperial College Charity funding TB-related research fellowship in Perú.}
+\cvitem{2013}{\textbf{WPH Charitable Trust Gold Medal} Awarded to the student who achieves the highest total percentage for written and clinical examinations at Warwick Medical School.}
+\cvitem{}{\textbf{The M and J McCarthy Prize for Consistent Performance} Awarded to the student who has performed consistently throughout the medical school programme}
+\cvitem{}{\textbf{The Faculty of Medicine Clinical Prize} Awarded to the student who has the highest total mark of clinical examination}
+
+\section{Selected quality improvement and audit projects}
+
+\cvitem{2022}{\textbf{Cefazolin procurement, Northern Care Alliance NHS Foundation Trust} I led the trust-wide application process to secure cefazolin for inclusion on the local formulary for the treatment of Staphylococcus aureus bacteraemia in dialysis patients or patients with penicillin allergy. This required an evidence-driven approach with extensive engagement with hospital management to build consensus and ensure clinical and operational alignment. The application was successfully approved in July 2022.}
+\cvitem{2021}{\textbf{CO-GENT audit, NITCAR collaborative} Ongoing work with a team of infectious diseases trainees based in the North West (the `NITCAR collaborative', \url{http://nitcollaborative.org.uk/wp/}), in realising a national audit reviewing prescribing practices and adverse outcomes of gentamicin prescribing. I am assisting with the methodological design of the audit and leading the data analysis.}
+\cvitem{2020}{\textbf{COVID-19 response, Blackpool Teaching Hospitals NHS Foundation Trust} As part of the `Respiratory COVID-19 Outreach Team', while completing a year of general and respiratory medicine I collaborated closely with the respiratory, microbiology and audit departments of a large NHS trust to create, update and disseminate guidelines on the diagnosis, management and infection control of COVID-19. Additionally, in response to high levels of nosocomial COVID-19 transmission, I worked closely with colleagues in microbiology and Public Health England in leading root cause analyses and ward outreach work. }
+\cvitem{2020}{\textbf{Community acquired pneumonia guidelines, Blackpool Teaching Hospitals NHS Foundation Trust} I led the updating of trust-wide guidelines on the management of community-acquired pneumonia. The guidelines were ratified and implemented early 2021. }
+\cvitem{2017}{\textbf{Guidelines on the management of CMV infection in inflammatory bowel disease, Royal Free London NHS Foundation Trust} I led a team of junior doctors in the auditing of the diagnosis and management of CMV colitis in patients with IBD. Wide ranging practice was identified. Results were presented locally. Following close engagement with virology, gastroenterology and trust management, consolidated guidelines were developed and approved in 2018. The audit cycle was completed and presented as a poster at ECCMID 2018.}
+
+\section{Teaching}
+
+\cvitem{Note}{Listed below are my current teaching commitments. I also have extensive experience in both clinical settings (PACES teaching, ward-round teaching), and in small group settings (teaching infectious diseases and microbiology topics to Manchester and Oxford medical students, junior doctors). Regular presenter at local seminars and meetings.}
+
+\cvitem{2024 -- current}{\textbf{Guest lecturer in statistics and epidemiology}, MSc in International Health and Tropical Medicine (IHTM), University of Oxford.}
+\cvitem{2023 -- current}{\textbf{Co-lead of statistics and epidemiology module}, MSc in Modelling for Global Health, University of Oxford}
+\cvitem{2023 -- current}{\textbf{WHO/TDR fellow tutor and mentor}, Infectious Diseases Data Observatory, University of Oxford}
+
+\section{Additional skills and interests}
+
+\cvitem{--}{Fluent in Spanish (C1 level).}
+\cvitem{--}{Proficient in statistical computing (R software, Stata).}
+\cvitem{--}{Amateur cellist. Frequently perform with the Radcliffe Orchestra (principal cellist), Oxford Chamber Orchestra, Arcadian Opera.}
+
+\section{Poster presentations}
+\hspace{\hintscolumnwidth + \separatorcolumnwidth}Available on request.
+\section{References}
+\hspace{\hintscolumnwidth + \separatorcolumnwidth}Available on request.
+
+\section{Selected oral presentations}
+
+\cvitem{--}{\textbf{Predicting Outcomes in Visceral Leishmaniasis}. American Society of Tropical Medicine \& Hygiene Annual Meeting. 13-17th November 2024. New Orleans, USA.}
+\cvitem{--}{\textbf{Prognostic models predicting clinical outcomes in patients diagnosed with visceral leishmaniasis: a systematic review}. Médecins Sans Frontières Scientific Days 2024. 16th May 2024. London. doi: 10.57740/9SthRqK}
+\cvitem{--}{\textbf{Peering into the crystal ball: can we predict which patients with visceral leishmaniasis fail treatment?} Oxford Tropical Network 2024 Conference. 29th January - 1st February 2024. Bangkok, Thailand.}
+\cvitem{--}{\textbf{Diagnostic sensitivity and time-to-detection of the MDR/XDR-TB Colour Test.}. 50th Union World Conference on Lung Health. 30th October - 2nd November 2019. Hyderabad, India}
+
+\section{Publications}
+\cvitem{Note}{DPhil related manuscripts currently being drafted or undergoing co-author review are not listed. \texttt{*}First or joint-first authorship}
+\cvitem{--}{Dahal P\ldots \textbf{Wilson JP}, et al. Blood transfusion in the care of patients with visceral leishmaniasis: a review of practices in therapeutic efficacy studies. Trans R Soc Trop Med Hyg. 2024 Aug 5;118(8):481-490. doi: 10.1093/trstmh/trae018}
+\cvitem{--}{\texttt{*}\textbf{Wilson JP}, et al. Prognostic Models Predicting Clinical Outcomes in Patients Diagnosed with Visceral Leishmaniasis: A Systematic Review. medRxiv. 2024 March 20:24304622. doi: 10.1101/2024.03.20.24304622. [preprint undergoing peer review BMJ Global Health].}
+\cvitem{--}{Munir A\ldots \textbf{Wilson JP}, et al. Haematological dynamics following treatment of visceral leishmaniasis: a protocol for systematic review and individual participant data (IPD) meta-analysis. BMJ Open. 2023 Dec 14;13(12):e074841. doi: 10.1136/bmjopen-2023-074841.}
+\cvitem{--}{Kumar R\ldots \textbf{Wilson JP}, et al. Host, parasite and drug determinants of clinical outcomes following treatment of visceral leishmaniasis: a protocol for individual participant data meta-analysis. BMJ Open. 2023 Oct 28;13(10):e074679. doi: 10.1136/bmjopen-2023-074679}
+\cvitem{--}{\texttt{*}\textbf{Wilson JP}, et al. Prognostic prediction models for clinical outcomes in patients diagnosed with visceral leishmaniasis: protocol for a systematic review. BMJ Open. 2023 Oct 24;13(10):e075597. doi: 10.1136/bmjopen-2023-075597.}
+\cvitem{--}{Bailon N\ldots \textbf{Wilson JP}, et al. A controlled evaluation of filter paper use during staining of sputum smears for tuberculosis microscopy. Wellcome Open Res. 2023 Apr 14;8:171. doi: 10.12688/wellcomeopenres.18827.1}
+\cvitem{--}{Scott NA\ldots \textbf{Wilson JP}, et al. Monocyte migration profiles define disease severity in acute COVID-19 and unique features of long COVID. Eur Respir J. 2023 May 11;61(5):2202226. doi: 10.1183/13993003.02226-2022}
+\cvitem{--}{\texttt{*}Bradley P, \textbf{Wilson JP}, et al. Conventional oxygen therapy versus CPAP as a ceiling of care in ward-based patients with COVID-19: a multi-centre cohort evaluation. EClinicalMedicine, October 2021. 10.1016/j.eclinm.2021.101122}
+\cvitem{--}{\texttt{*}Calderwood CJ, \textbf{Wilson JP}, et al. Dynamics of sputum conversion during effective tuberculosis treatment: A systematic review and meta-analysis. PLOS Medicine, April 2021. 10.1371/journal.pmed.1003566}
+\cvitem{--}{\texttt{*}\textbf{Wilson JP}, Bonington A. Blood-borne virus transmission from patient to surgeon: what do I need to know? BJUI Knowledge, March 2021. 10.18591/BJUIK.033}
+\cvitem{--}{Bradley P\ldots \textbf{Wilson JP}, et al. Continuous positive airway pressure (CPAP) as a ceiling of care treatment for hypoxaemic respiratory failure due to COVID-19. Journal of the Intensive Care Society, February 2021. 10.1177/1751143721996538}
+\cvitem{--}{\texttt{*}\textbf{Wilson JP}, et al. Lick of death: Capnocytophaga canimorsus is an important cause of sepsis in the elderly. BMJ Case Reports, May 2016. 10.1136/bcr-2016-215450}
+\cvitem{--}{Hawley C, \textbf{Wilson JP}, et al. Epidemiology of paediatric minor head injury; Comparison of injury characteristics with Indices of Multiple Deprivation. Injury, 2013. 0.1016/j.injury.2013.07.021}
+
+
+
+\clearpage
+
+\end{document}
+
+
+%% end of file `template.tex'.
